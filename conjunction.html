@@ -3,8 +3,30 @@
 <head>
   <title>Conjunctions Lesson</title>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <style type="text/css">
+     #back-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      padding: 8px 12px;
+      font-size: 14px;
+      background-color: #333333;
+      color: #ffffff;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      border-radius: 10px;
+    }
+    #back-button:hover {
+      background-color: #222222;
+    }
+  </style>
 </head>
 <body>
+  <a href="index.html">
+      <button id="back-button">Back</button>
+    </a>
+
   <h1>Conjunctions Lesson</h1>
   <div id="content">
     <h2>Introduction</h2>
@@ -13,8 +35,8 @@
     <h2>Error Recognition</h2>
     <p>One common error with conjunctions is using the wrong conjunction to express a specific relationship or misusing conjunctions in compound sentences. Let's look at an example:</p>
     <code>
-      <p>Wrong: I want to go to the beach, but it's raining.</p>
-      <p>Correct: I want to go to the beach, although it's raining.</p>
+      <p class="correct">Correct: I want to go to the beach, although it's raining.</p>
+      <p class="wrong">Wrong: I want to go to the beach, but it's raining.</p>
     </code>
   
     <h2>Explanation</h2>
@@ -23,29 +45,29 @@
     <h3>Coordinating Conjunctions</h3>
     <p>Coordinating conjunctions connect words, phrases, or independent clauses of equal importance.</p>
     <code>
-      <p>Correct: I like both coffee and tea.</p>
-      <p>Wrong: I like both coffee, tea.</p>
+      <p class="correct">Correct: I like both coffee and tea.</p>
+      <p class="wrong">Wrong: I like both coffee, tea.</p>
     </code>
   
     <h3>Subordinating Conjunctions</h3>
     <p>Subordinating conjunctions introduce subordinate clauses, which depend on the main clause and cannot stand alone.</p>
     <code>
-      <p>Correct: She will go to the store if she needs groceries.</p>
-      <p>Wrong: She will go to the store, if she needs groceries.</p>
+      <p class="correct">Correct: She will go to the store if she needs groceries.</p>
+      <p class="wrong">Wrong: She will go to the store, if she needs groceries.</p>
     </code>
   
     <h3>Correlative Conjunctions</h3>
     <p>Correlative conjunctions work in pairs to connect words, phrases, or clauses and show a relationship between them.</p>
     <code>
-      <p>Correct: Either we go to the movies, or we stay home and watch TV.</p>
-      <p>Wrong: Either we go to the movies, but we stay home and watch TV.</p>
+      <p class="correct">Correct: Either we go to the movies, or we stay home and watch TV.</p>
+      <p class="wrong">Wrong: Either we go to the movies, but we stay home and watch TV.</p>
     </code>
   
     <h3>Conjunctive Adverbs</h3>
     <p>Conjunctive adverbs connect independent clauses and show relationships such as cause and effect, contrast, or time.</p>
     <code>
-      <p>Correct: He studied hard; therefore, he passed the exam.</p>
-      <p>Wrong: He studied hard; because, he passed the exam.</p>
+      <p class="correct">Correct: He studied hard; therefore, he passed the exam.</p>
+      <p class="wrong">Wrong: He studied hard; because, he passed the exam.</p>
     </code>
   
     <h2>Summary</h2>

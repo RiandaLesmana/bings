@@ -3,8 +3,30 @@
 <head>
   <title>Prepositions Lesson</title>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <style type="text/css">
+     #back-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      padding: 8px 12px;
+      font-size: 14px;
+      background-color: #333333;
+      color: #ffffff;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      border-radius: 10px;
+    }
+    #back-button:hover {
+      background-color: #222222;
+    }
+  </style>
 </head>
 <body>
+  <a href="index.html">
+      <button id="back-button">Back</button>
+    </a>
+
   <h1>Prepositions Lesson</h1>
   <div id="content">
     <h2>Introduction</h2>
@@ -13,8 +35,8 @@
     <h2>Error Recognition</h2>
     <p>One common error with prepositions is using the wrong preposition or misusing prepositions in certain expressions. Let's look at an example:</p>
     <code>
-      <p>Wrong: He is waiting on the bus stop.</p>
-      <p>Correct: He is waiting at the bus stop.</p>
+      <p class="correct">Correct: He is waiting at the bus stop.</p>
+      <p class="wrong">Wrong: He is waiting on the bus stop.</p>
     </code>
   
     <h2>Explanation</h2>
@@ -23,29 +45,29 @@
     <h3>Location Prepositions</h3>
     <p>Location prepositions indicate the position or place of something.</p>
     <code>
-      <p>Correct: The book is on the table.</p>
-      <p>Wrong: The book is at the table.</p>
+      <p class="correct">Correct: The book is on the table.</p>
+      <p class="wrong">Wrong: The book is at the table.</p>
     </code>
   
     <h3>Time Prepositions</h3>
     <p>Time prepositions indicate the time or duration of an event.</p>
     <code>
-      <p>Correct: She arrived at 9 o'clock.</p>
-      <p>Wrong: She arrived on 9 o'clock.</p>
+      <p class="correct">Correct: She arrived at 9 o'clock.</p>
+      <p class="wrong">Wrong: She arrived on 9 o'clock.</p>
     </code>
   
     <h3>Direction Prepositions</h3>
     <p>Direction prepositions indicate the movement or direction of something.</p>
     <code>
-      <p>Correct: He walked towards the park.</p>
-      <p>Wrong: He walked to the park.</p>
+      <p class="correct">Correct: He walked towards the park.</p>
+      <p class="wrong">Wrong: He walked to the park.</p>
     </code>
   
     <h3>Manner Prepositions</h3>
     <p>Manner prepositions describe the way in which an action is performed.</p>
     <code>
-      <p>Correct: She painted the picture with a brush.</p>
-      <p>Wrong: She painted the picture by a brush.</p>
+      <p class="correct">Correct: She painted the picture with a brush.</p>
+      <p class="wrong">Wrong: She painted the picture by a brush.</p>
     </code>
   
     <h2>Summary</h2>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Preloader Example</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #f5f5f5;
+    }
+    .preloader {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .preloader .loader {
+      width: 150px;
+      height: 150px;
+      position: relative;
+    }
+    .preloader .runner {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .preloader .runner img {
+      width: 100%;
+      height: auto;
+    }
+    /* Hide content initially */
+    .hide {
+      display: none;
+    }
+  </style>
+  <script>
+    // Simulate delay before showing content
+    setTimeout(function() {
+      var preloader = document.getElementById('preloader');
+      var content = document.getElementById('content');
+      preloader.style.display = 'none';
+      content.style.display = 'block';
+    }, 3000);
+  </script>
+</head>
+<body>
+  <div id="preloader" class="preloader">
+    <div class="loader">
+      <div class="runner">
+        <img src="true.gif" alt="Running Figure">
+      </div>
+    </div>
+    <p>Loading...</p>
+  </div>
+  
+  <div id="content" class="hide">
+    <!-- Your page content goes here -->
+    <h1>Welcome to My Website</h1>
+    <p>This is the main content of the page.</p>
+  </div>
+</body>
+</html>
