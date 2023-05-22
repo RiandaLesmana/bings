@@ -2,56 +2,40 @@
 <html>
 <head>
   <title>Welcome Page</title>
-  <style>
-    body {
-      text-align: center;
-      background-color: #f5f5f5;
-      font-family: Arial, sans-serif;
-    }
-    h1 {
-      margin-top: 50px;
-      color: #333333;
-    }
-    .button {
-      margin-top: 20px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    .button button {
-      margin: 5px;
-      padding: 10px 20px;
-      flex-basis: 20%; /* Adjust this value for desired button width */
-      font-size: 16px;
-      border: none;
-      background-color: #007bff;
-      color: #ffffff;
-      cursor: pointer;
-      transition: background-color 0.3s;
-      border-radius: 10px;
-    }
-    .button button:hover {
-      background-color: #0056b3;
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <h1>WELCOME</h1>
-  <div class="button">
-    <button onclick="goToLink('verb.html')">Learn Verb</button>
-    <button onclick="goToLink('noun.html')">Learn Nouns</button>
-    <button onclick="goToLink('pronoun.html')">Learn Pronouns</button>
-    <button onclick="goToLink('adjective.html')">Learn Adjective</button>
-    <button onclick="goToLink('adverb.html')">Learn Adverbs</button>
-    <button onclick="goToLink('preposition.html')">Learn Prepositions</button>
-    <button onclick="goToLink('conjunction.html')">Learn Conjunctions</button>
-    <button onclick="goToLink('interjection.html')">Learn Interjections</button>
-    <button onclick="goToLink('agrement.html')">Learn Agreement</button>
-    <button onclick="goToLink('paralel.html')">Learn Paralel</button>
-  </div>
+  <div class="container">
+    <h1>Welcome</h1>
+    <article>
+      <h2>Introduction</h2>
+      <p>
+        This article aims to provide a comprehensive understanding of various parts in the English language. Each section focuses on a specific category, including verbs, nouns, pronouns, adjectives, adverbs, prepositions, conjunctions, interjections, agreement, and parallelism.
+      </p>
+    </article>
+    <div class="button">
+      <button onclick="goToLink('verb.html')">Learn Verbs</button>
+      <button onclick="goToLink('noun.html')">Learn Nouns</button>
+      <button onclick="goToLink('pronoun.html')">Learn Pronouns</button>
+      <button onclick="goToLink('adjective.html')">Learn Adjectives</button>
+      <button onclick="goToLink('adverb.html')">Learn Adverbs</button>
+      <button onclick="goToLink('preposition.html')">Learn Prepositions</button>
+      <button onclick="goToLink('conjunction.html')">Learn Conjunctions</button>
+      <button onclick="goToLink('interjection.html')">Learn Interjections</button>
+      <button onclick="goToLink('agrement.html')">Learn Agreement</button>
+      <button onclick="goToLink('paralel.html')">Learn Parallelism</button>
+</div>
   <div>
-    <p> Content Source : Grammarly.com </p>
-  </div>
+  <p>Content Source : 
+      <a href="https://www.grammarly.com/" class="deco">
+        <button class="custom-button">  
+          grammarly.com
+        </button>
+      </a> 
+  </p>
+</div>
+
+</div>
   <script>
     function goToLink(url) {
       window.location.href = url;
